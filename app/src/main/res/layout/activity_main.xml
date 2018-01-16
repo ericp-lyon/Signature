@@ -8,32 +8,72 @@
     tools:context="fr.m2i.signature.MainActivity"
     android:gravity="center_horizontal">
 
-
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Garcon"/>
     <fr.m2i.signature.TagEdit
         android:id="@+id/teSignature"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-    />
+        android:layout_height="170dp"
+        android:background="#80aaccb1"
+                           />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fille"/>
+
+    <fr.m2i.signature.TagEdit
+        android:id="@+id/teSignature2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#80ff5586"
+
+        />
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
 
     >
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Clear"
-        android:onClick="btClear"
-        android:id="@+id/btClear"
+        android:text="Clear1"
+        android:onClick="btClear1"
+        android:id="@+id/btClear1"
         android:layout_marginRight="50dp"/>
+
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="ok"
-        android:onClick="btOk"
-        android:id="@+id/btOk"/>
+        android:text="Clear2"
+        android:onClick="btClear2"
+        android:id="@+id/btClear2"/>
 </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Save1"
+        android:onClick="btSave"
+        android:id="@+id/btSave"
+        android:layout_marginRight="50dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="SAVE2"
+            android:onClick="btSave2"
+            android:id="@+id/btSave2"
+            />
+    </LinearLayout>
 
 
 </LinearLayout>
